@@ -17,29 +17,29 @@ var banner = ['/*!\n',
 ].join('');
 
 // Compile LESS files from /less into /css
-gulp.task('less', function() {
+gulp.task('less', function () {
     return gulp.src('less/grayscale.less')
         .pipe(less())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
+gulp.task('minify-css', ['less'], function () {
     return gulp.src('css/grayscale.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Minify JS
-gulp.task('minify-js', function() {
+gulp.task('minify-js', function () {
     return gulp.src('js/grayscale.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
@@ -47,7 +47,7 @@ gulp.task('minify-js', function() {
         .pipe(gulp.dest('js'))
         .pipe(browserSync.reload({
             stream: true
-        }))
+        }));
 });
 
 // Copy vendor libraries from /node_modules into /vendor
@@ -66,8 +66,8 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.md',
             '!node_modules/font-awesome/*.json'
         ])
-        .pipe(gulp.dest('vendor/font-awesome'))
-})
+        .pipe(gulp.dest('vendor/font-awesome'));
+});
 
 // Run everything
 gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
@@ -77,12 +77,12 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: ''
-        },
-    })
-})
+        }
+    });
+});
 
 // Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
+gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function () {
     gulp.watch('less/*.less', ['less']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
