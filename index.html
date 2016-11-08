@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Alexander Zywicki</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+
+</script>
+<style>
+.skillbar {
+    font:inherit;
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:white;
+	height:35px;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+    font: inherit;
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:16px;
+	color:white;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:1px;
+	-webkit-border-bottom-left-radius:1px;
+	-moz-border-radius-topleft:1px;
+	-moz-border-radius-bottomleft:1px;
+	border-top-left-radius:1px;
+	border-bottom-left-radius:1px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.2);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:1px;
+	-webkit-border-bottom-left-radius:1px;
+	-moz-border-radius-topleft:1px;
+	-moz-border-radius-bottomleft:1px;
+	border-top-left-radius:1px;
+	border-bottom-left-radius:1px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:16px;
+	height:35px;
+	line-height:35px;
+	color:#6AC799;
+	color:rgba(0, 0, 0, 0.4);
+    background: transparent;
+}
+
+</style>
+<style>
+    .my-picture{
+        
+        height: 50rem;
+        width: 50rem;
+        padding-bottom: 2rem;
+    }
+    .projects-image{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .contact-image{
+        height: 50rem;
+        width: 75rem;
+        position: relative;
+        padding: 5rem;
+    }
+    </style>
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-code"></i> <span class="light">Alexander</span> Zywicki
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Code</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro ">
+        <div class="intro-body intro-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Alexander Zywicki</h1>
+                        <p class="intro-text">Software Engineer</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about"  class="container content-section text-center">
+        <div class="row">
+            <h1>About</h1>
+            <img class="my-picture" src = "img/14207685_10154566187451209_3954180229757599869_o.jpg">
+        </div>    
+        <div class="row">
+            <!--BIO HERE -->
+            
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Skills</h3>
+                
+                <div class="skillbar clearfix " data-percent="100%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>C++11/14</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">4 Years</div>
+                </div>
+                <div class="skillbar clearfix " data-percent="75%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>Make</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">3 Years</div>
+                </div>
+                <div class="skillbar clearfix " data-percent="75%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>Git</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">3 Years</div>
+                </div>
+                <div class="skillbar clearfix " data-percent="25%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>HTML / CSS</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">1 Year</div>
+                </div>
+                <div class="skillbar clearfix " data-percent="25%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>Python</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">1 Year</div>
+                </div>
+                <div class="skillbar clearfix " data-percent="25%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>Ruby</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">1 Year</div>
+                </div>
+                <h3>Platforms</h3>
+                <div class="skillbar clearfix " data-percent="100%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>OSX</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">4 Years</div>
+                </div>
+                <div class="skillbar clearfix " data-percent="50%">
+	               <div class="skillbar-title" style="background: #E45950;"><span>Linux</span></div>
+	               <div class="skillbar-bar" style="background: #E45950;"></div>
+	               <div class="skill-bar-percent">2 Years</div>
+                </div>
+                
+               
+            </div>
+        </div>
+         <a href="https://github.com/zyvitski/resume/blob/master/resume-alexander-zywicki.pdf" download = "resume-alexander-zywicki.pdf" class="btn btn-default btn-lg"><i class="fa fa-download fa-fw"></i> <span class="network-name">Resume</span></a>
+    </section>
+
+    <!-- Code Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                
+                <div class="row">
+                                        <h2>Code</h2>
+
+                    <div class="col-lg-8 col-lg-offset-2">
+                        
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://zyvitski.github.io/signals/" class="btn btn-default btn-lg"><i class="fa fa-code fa-fw"></i> <span class="network-name">C++ 11 - Signals & Slots</span></a>
+                        </li>
+                        <li>
+                            <a href="https://zyvitski.github.io/thread_pool/" class="btn btn-default btn-lg"><i class="fa fa-code fa-fw"></i> <span class="network-name">C++11 - Thread Pool</span></a>
+                        </li>
+                        
+                    </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <img class = "projects-image" src = "img/home-ill-build.png"></img>
+                </div>
+                <div class="row">
+                                <h3></h3>            
+                    <h4>Find my latest work on GitHub</h4>
+                    </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <a href="https://github.com/zyvitski" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">View All On Github</span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center contact-section">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <a href=""mailto:alexander.zywicki@gmail.com"" class="btn btn-default btn-lg"><i class="fa fa-envelope-square fa-fw"></i> <span class="network-name">alexander.zywicki@gmail.com</span></a>
+                <a href=""tel:"214-862-8468" class="btn btn-default btn-lg"><i class="fa fa-phone-square fa-fw"></i> <span class="network-name">214-862-8468</span></a>
+                
+                <img src="img/Screen-Shot-2015-07-22-at-4.18.15-PM.png" class = "contact-image">
+                <h3>Online</h3>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexander-zywicki" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/zyvitski" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
