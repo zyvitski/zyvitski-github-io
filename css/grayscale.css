@@ -119,8 +119,8 @@ a:focus {
 }
 .intro {
   display: table;
-  width: 100%;
-  height: auto;
+  width: inherit;
+  height:inherit;
   padding: 100px 0;
   text-align: center;
   color: white;
@@ -128,9 +128,6 @@ a:focus {
 .intro-background{
     color: black;
     filter: invert(100%);
-    background-position: center;
-    width: 100%;
-    height: auto;
   background: url(../img/html-programming.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
