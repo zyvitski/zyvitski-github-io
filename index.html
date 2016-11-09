@@ -28,7 +28,101 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+<style>
+    
+.skillbar {
+    font:inherit;
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:white;
+	height:35px;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
 
+.skillbar-title {
+    font: inherit;
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:16px;
+	color:white;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:1px;
+	-webkit-border-bottom-left-radius:1px;
+	-moz-border-radius-topleft:1px;
+	-moz-border-radius-bottomleft:1px;
+	border-top-left-radius:1px;
+	border-bottom-left-radius:1px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.2);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:1px;
+	-webkit-border-bottom-left-radius:1px;
+	-moz-border-radius-topleft:1px;
+	-moz-border-radius-bottomleft:1px;
+	border-top-left-radius:1px;
+	border-bottom-left-radius:1px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:16px;
+	height:35px;
+	line-height:35px;
+	color:#6AC799;
+	color:rgba(0, 0, 0, 0.4);
+    background: transparent;
+}
+.my-picture{
+        
+        height: 50%;
+        width: 50%;
+        padding-bottom: 2rem;
+    }
+    .projects-image{
+        width: 50%;
+        height: 50%;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .contact-image{
+        height: 50rem;
+       width: 90%;
+        position: relative;
+        padding: 5rem;
+    }
+    </style>
 
 
 
