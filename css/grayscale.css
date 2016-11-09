@@ -129,6 +129,7 @@ a:focus {
     color: black;
     filter: invert(100%);
     background-position: center;
+    width: 100%;
   background: url(../img/html-programming.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
@@ -146,7 +147,7 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
-@media (min-width: 768px) {
+@media (min-width: 25%) {
   .intro {
     height: 100%;
     padding: 0;
