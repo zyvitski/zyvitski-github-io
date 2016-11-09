@@ -128,6 +128,7 @@ a:focus {
 .intro-background{
     color: black;
     filter: invert(100%);
+    background-position: center;
   background: url(../img/html-programming.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
