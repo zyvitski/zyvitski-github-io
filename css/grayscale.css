@@ -130,7 +130,7 @@ a:focus {
     filter: invert(100%);
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: auto;
   background: url(../img/html-programming.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
