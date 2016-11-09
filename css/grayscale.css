@@ -126,8 +126,7 @@ a:focus {
   color: white;
 }
 .intro-background{
-    color: black;
-    filter: invert(100%);
+    color: white;
   background: url(../img/html-programming.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
@@ -162,10 +161,10 @@ a:focus {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 100% !important;
   font-size: 40px;
-  color: black;
+  color: white;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
