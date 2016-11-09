@@ -40,7 +40,7 @@ p {
   }
 }
 a {
-  color: #508BB1;
+  color: white;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -257,16 +257,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #508BB1;
-  color: #508BB1;
+  border: 1px solid white;
+  color: white;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #508BB1;
+  border: 1px solid white;
   outline: none;
   color: black;
-  background-color: #508BB1;
+  background-color: white;
 }
 ul.banner-social-buttons {
   margin-top: 0;
