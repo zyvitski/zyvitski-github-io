@@ -127,7 +127,8 @@ a:focus {
   color: white;
 }
 .intro-background{
-    color: white;
+color: white;
+align-self: flex-start;
   background: url(../img/html-programming.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
@@ -271,12 +272,12 @@ a:focus {
 ul.banner-social-buttons {
   margin-top: 0;
 }
-@media (max-width: 1199px) {
+@media (max-width: 100%) {
   ul.banner-social-buttons {
     margin-top: 15px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 100%) {
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
